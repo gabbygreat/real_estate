@@ -1,0 +1,71 @@
+name: real_estate
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  blurrycontainer: ^2.1.0
+  cupertino_icons: ^1.0.2
+  flutter_animate: ^4.5.0
+  flutter:
+    sdk: flutter
+  flutter_screenutil: ^5.9.1
+  flutter_svg: ^2.0.10+1
+  lottie: ^3.1.2
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/svg/
+    - assets/json/
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/Roboto/Roboto-Black.ttf
+          weight: 900
+        - asset: assets/Roboto/Roboto-Bold.ttf
+          weight: 700
+        - asset: assets/Roboto/Roboto-Medium.ttf
+          weight: 500
+        - asset: assets/Roboto/Roboto-Regular.ttf
+          weight: 400
+        - asset: assets/Roboto/Roboto-Light.ttf
+          weight: 300
+        - asset: assets/Roboto/Roboto-Thin.ttf
+          weight: 100
+
+spider:
+  # Generates unit tests to verify that the assets exists in assets directory
+  generate_tests: true
+  # Use this to remove vcs noise created by the `generated` comments in dart code
+  no_comments: true
+  # Exports all the generated file as the one library
+  export: true
+  # This allows you to import all the generated references with 1 single import!
+  use_part_of: true
+  # Generates a variable that contains a list of all asset values.
+  use_references_list: false
+  package: resources
+  groups:
+      # PNG
+    - path: assets/images
+      class_name: AppImages
+      types: [.png, jpeg, jpg]
+      # SVG
+    - path: assets/svg
+      class_name: AppSvg
+      types: [.svg]
+    - path: assets/json
+      class_name: AppAnime
+      types: [.json]
