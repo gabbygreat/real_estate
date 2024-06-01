@@ -1,16 +1,18 @@
-# real_estate
+# Real Estate
 
-A new Flutter project.
+## MVC Structure
+This project adheres to the MVC architecture, which separates the application logic into three interconnected components:
 
-## Getting Started
+- Model: Represents the data layer, responsible for managing the data and business logic.
+- View: Represents the UI layer, responsible for displaying the data to the user.
+- Controller: Acts as an intermediary between the Model and the View, handling user input and updating the View accordingly.
 
-This project is a starting point for a Flutter application.
+## Packages and Functions
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- blurrycontainer: Provides a container widget with a customizable blurry background.
+- cupertino_icons: Cupertino style icons for iOS design.
+- flutter_animate: A powerful animation library for Flutter.
+- flutter: The Flutter SDK itself.
+- flutter_screenutil: Responsiveness and adaptiveness.
+- flutter_svg: Provides a wrapper around Dart implementations of SVG parsing.
+- lottie: For rendering Lottie animations in Flutter.

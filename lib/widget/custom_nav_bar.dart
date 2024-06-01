@@ -121,7 +121,11 @@ class _BottomIconState extends State<BottomIcon>
   @override
   void initState() {
     super.initState();
-    _animationController = AnimationController(vsync: this);
+    _animationController = AnimationController(
+      vsync: this,
+      duration: 2.microseconds,
+      reverseDuration: 2.microseconds,
+    );
   }
 
   @override
@@ -130,15 +134,16 @@ class _BottomIconState extends State<BottomIcon>
     super.dispose();
   }
 
+  Future<void> _playAnimation() async {
+    widget.onChanged(widget.index);
+    await _animationController.reverse();
+    await _animationController.forward();
+  }
+
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () async {
-        widget.onChanged(widget.index);
-        _animationController.reverse();
-        await Future.delayed(0.15.seconds);
-        _animationController.forward();
-      },
+      onTap: _playAnimation,
       child: Stack(
         children: [
           Animate(
