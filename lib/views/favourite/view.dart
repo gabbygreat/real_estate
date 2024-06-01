@@ -7,6 +7,11 @@ class FavouriteView
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBodyBehindAppBar: true,
+      appBar: AppBar(
+        systemOverlayStyle: SystemUiOverlayStyle.dark,
+        backgroundColor: Colors.transparent,
+      ),
       body: Center(
         child: LottieBuilder.asset(
           AppAnime.favourite,
