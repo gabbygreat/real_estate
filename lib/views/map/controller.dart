@@ -45,7 +45,7 @@ class MapController extends State<MapScreen> {
                   ModalText(
                     text: 'Cosy areas',
                     icon: Icon(
-                      Icons.abc,
+                      Icons.verified_user_outlined,
                       color: rgb(140, 137, 132),
                     ),
                   ),
@@ -53,21 +53,21 @@ class MapController extends State<MapScreen> {
                     text: 'Price',
                     selected: true,
                     icon: Icon(
-                      Icons.abc,
+                      Icons.wallet,
                       color: rgb(251, 171, 64),
                     ),
                   ),
                   ModalText(
                     text: 'Infrastructure',
                     icon: Icon(
-                      Icons.abc,
+                      Icons.shopping_basket_outlined,
                       color: rgb(140, 137, 132),
                     ),
                   ),
                   ModalText(
                     text: 'Without any layer',
                     icon: Icon(
-                      Icons.abc,
+                      Icons.stacked_bar_chart_rounded,
                       color: rgb(140, 137, 132),
                     ),
                   ),

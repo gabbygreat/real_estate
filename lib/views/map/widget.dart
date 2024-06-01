@@ -141,7 +141,7 @@ class ModalText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 35.h,
+      height: 42.h,
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
