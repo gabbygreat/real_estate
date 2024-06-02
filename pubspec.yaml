@@ -14,7 +14,6 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_screenutil: ^5.9.1
-  flutter_svg: ^2.0.10+1
   lottie: ^3.1.2
 
 dev_dependencies:
@@ -26,23 +25,28 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/
-    - assets/svg/
     - assets/json/
 
   fonts:
-    - family: Roboto
+    - family: Montserrat
       fonts:
-        - asset: assets/Roboto/Roboto-Black.ttf
+        - asset: assets/Montserrat/Montserrat-Black.ttf
           weight: 900
-        - asset: assets/Roboto/Roboto-Bold.ttf
+        - asset: assets/Montserrat/Montserrat-ExtraBold.ttf
+          weight: 800
+        - asset: assets/Montserrat/Montserrat-Bold.ttf
           weight: 700
-        - asset: assets/Roboto/Roboto-Medium.ttf
+        - asset: assets/Montserrat/Montserrat-SemiBold.ttf
+          weight: 600
+        - asset: assets/Montserrat/Montserrat-Medium.ttf
           weight: 500
-        - asset: assets/Roboto/Roboto-Regular.ttf
+        - asset: assets/Montserrat/Montserrat-Regular.ttf
           weight: 400
-        - asset: assets/Roboto/Roboto-Light.ttf
+        - asset: assets/Montserrat/Montserrat-Light.ttf
           weight: 300
-        - asset: assets/Roboto/Roboto-Thin.ttf
+        - asset: assets/Montserrat/Montserrat-ExtraLight.ttf
+          weight: 200
+        - asset: assets/Montserrat/Montserrat-Thin.ttf
           weight: 100
 
 spider:
@@ -62,10 +66,8 @@ spider:
     - path: assets/images
       class_name: AppImages
       types: [.png, jpeg, jpg]
-      # SVG
-    - path: assets/svg
-      class_name: AppSvg
-      types: [.svg]
+
+      # Animation
     - path: assets/json
       class_name: AppAnime
       types: [.json]

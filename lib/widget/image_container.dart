@@ -47,8 +47,9 @@ class _ImageContainerState extends State<ImageContainer> {
                                     MediaQuery.sizeOf(context).width / 2
                                 ? Alignment.centerLeft
                                 : Alignment.center,
-                            child: const Text(
+                            child: Text(
                               'Gladkova St., 25',
+                              style: 14.w400.withColor(rgb(0, 0, 0)),
                             ),
                           ),
                           Align(

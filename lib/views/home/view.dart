@@ -84,7 +84,7 @@ class HomeView extends StatelessView<HomeScreen, HomeController> {
                     ),
                     Text(
                       'let\'s select your\nperfect place',
-                      style: 24.w500.withColor(rgb(35, 34, 32)),
+                      style: 24.w600.withColor(rgb(35, 34, 32)),
                     ).animate().slideY(begin: 0.5),
                     35.verticalSpace,
                     Row(

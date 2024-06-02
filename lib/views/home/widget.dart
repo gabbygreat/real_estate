@@ -75,7 +75,7 @@ class _OfferDisplayState extends State<OfferDisplay>
             flex: 1,
             child: Text(
               widget.displayType.name.capitalize,
-              style: 15.w600.withColor(
+              style: 15.w500.withColor(
                     switch (widget.displayType) {
                       DisplayType.buy => rgb(251, 245, 235),
                       DisplayType.rent => rgb(164, 149, 126),
@@ -92,7 +92,7 @@ class _OfferDisplayState extends State<OfferDisplay>
                     var number_ = _animation.value;
                     return Text(
                       '$number_'.formatNumberWithSpaces,
-                      style: 28.w800.withColor(
+                      style: 28.w700.withColor(
                             switch (widget.displayType) {
                               DisplayType.buy => rgb(251, 245, 235),
                               DisplayType.rent => rgb(164, 149, 126),
@@ -103,7 +103,7 @@ class _OfferDisplayState extends State<OfferDisplay>
                 ),
                 Text(
                   'offers',
-                  style: 12.w600.withColor(
+                  style: 12.w500.withColor(
                         switch (widget.displayType) {
                           DisplayType.buy => rgb(251, 245, 235),
                           DisplayType.rent => rgb(164, 149, 126),

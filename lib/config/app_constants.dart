@@ -1,5 +1,4 @@
-
 class AppConstant {
-  static const String fontFamily = 'Roboto';
-  static const String appName = 'Shoppinz';
+  static const String fontFamily = 'Montserrat';
+  static const String appName = 'Real Estate';
 }
